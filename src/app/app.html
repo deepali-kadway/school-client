@@ -2,9 +2,14 @@
 <!-- A typescript front-end framework for building single page applications (SPAs) -->
 
 <main>
-  <h1>{{title}}</h1>
+  <!-- String interpolation: {{}} is used to render dynamic content. We can even write Javascripts expressions in them -->
+  <h1>{{ 5 > 3? title : "No Title"}}</h1>
   <p>This is the app component</p>
+<!-- What are directives? -->
+ <!-- Directives are instructions which tells angular to manipulate the DOM elements. -->
+<!-- ngIf, ngFor, ngSwitch, ngStyle, ngClass -->
   <!-- using custom components -->
-   <custom></custom>
+   <custom *ngIf="2 > 1"></custom>
+   <custom2 *ngIf="3 > 2"></custom2> <!-- Changed condition to true so contents of custom2 will show -->
 </main>
 <router-outlet></router-outlet>
