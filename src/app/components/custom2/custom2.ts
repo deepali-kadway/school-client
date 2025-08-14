@@ -21,4 +21,8 @@ export class Custom2 {
     // change the size randomly
     this.boxSize = Math.floor(Math.random() * 200) + 100;
   }
+
+  onKeyDown(emailValue: any) {
+    console.log(emailValue);
+  }
 }
