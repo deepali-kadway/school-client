@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 })
 export class Custom2 {
   date = new Date();
-   boxColor = 'blue';
+  boxColor = 'blue';
   boxSize = 150;
+  emailValue = ''; // Added missing emailValue property
 
   changeStyle() {
     // change color randomly
